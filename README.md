@@ -38,10 +38,5 @@ This repository contains a full-stack MERN app which converts plain text to a fl
 ## Added features (AI integration next steps)
 - Export to PNG & SVG using `html-to-image` (client) — Download buttons included in the FlowRenderer.
 - Save edited diagrams: you can move nodes, edit, and click **Save Edited Diagram** (requires the diagram to have been saved originally and user to be logged in).
-- Stripe Checkout integration scaffold: server route `/payment/create-checkout-session` and client `PaymentButton` component. Set `STRIPE_SECRET_KEY` and `VITE_STRIPE_PRICE_ID` / `VITE_STRIPE_PUBLISHABLE` in env.
 
-## How to configure Stripe for testing
-1. Create a Stripe account and a Price (one-time) or Product with a Price.
-2. Set `STRIPE_SECRET_KEY` in `server/.env` and `VITE_STRIPE_PRICE_ID` and `VITE_STRIPE_PUBLISHABLE` in `client/.env` (Vite: use `VITE_` prefix).
-3. Start the server and client and click the Upgrade button to go to Stripe's hosted Checkout.
 
